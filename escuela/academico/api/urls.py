@@ -5,3 +5,9 @@ from academico.api.views import (
 
 router = DefaultRouter()
 router.register('carreras', CarreraViewSet, basename='carrera')
+
+router.register('alumnos', AlumnoViewSet, basename='alumno')
+router.register('materias', MateriaViewSet, basename='materia')
+router.register('alumnos', InscripcionViewSet, basename='inscripcion')
+
+urlpatterns = router.urls

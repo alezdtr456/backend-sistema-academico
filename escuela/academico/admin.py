@@ -1,3 +1,7 @@
 from django.contrib import admin
+from academico.models import Carrera, Alumno, Materia, Inscripcion
 
-# Register your models here.
+admin.site.register(Carrera)
+admin.site.register(Alumno)
+admin.site.register(Materia)
+admin.site.register(Inscripcion)

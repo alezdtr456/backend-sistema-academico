@@ -6,7 +6,7 @@ class CarreraSerializer(serializers.ModelSerializer):
         model = Carrera
         fields = '__all__'
 
-class AlumnoSerializers(serializers.ModelSerializer):
+class AlumnoSerializer(serializers.ModelSerializer):
     carrera_nombre = serializers.ReadOnlyField(source='carrera.nombre')
     
     class Meta:

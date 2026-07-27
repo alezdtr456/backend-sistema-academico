@@ -39,10 +39,12 @@ class Inscripcion(models.Model):
         Materia, related_name='inscripciones', on_delete=models.CASCADE
     )
     fecha_inscripcion = models.FloatField(null=True, blank=True)
+    calificacion = models.FloatField(null=True, blank=True)
     
     class Meta:
         unique_together = ('alumno', 'materia')
         
     def __str__(self):
         return f"{self.alumno} - {self.materia}"
+    
     
